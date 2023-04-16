@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 devDependencies:
+  '@master/css':
+    specifier: 2.0.0-beta.141
+    version: 2.0.0-beta.141
   '@master/css.svelte':
     specifier: 2.0.0-beta.141
     version: 2.0.0-beta.141(svelte@3.58.0)
