@@ -1,5 +1,10 @@
 lockfileVersion: '6.0'
 
+dependencies:
+  '@master/normal.css':
+    specifier: 2.0.0-beta.141
+    version: 2.0.0-beta.141
+
 devDependencies:
   '@master/css':
     specifier: 2.0.0-beta.141
@@ -16,6 +21,9 @@ devDependencies:
   '@sveltejs/kit':
     specifier: ^1.5.0
     version: 1.15.5(svelte@3.58.0)(vite@4.2.1)
+  '@tolgee/svelte':
+    specifier: ^5.8.2
+    version: 5.8.2(svelte@3.58.0)
   '@typescript-eslint/eslint-plugin':
     specifier: ^5.45.0
     version: 5.58.0(@typescript-eslint/parser@5.58.0)(eslint@8.38.0)(typescript@5.0.4)
@@ -358,7 +366,6 @@ packages:
 
   /@master/normal.css@2.0.0-beta.141:
     resolution: {integrity: sha512-zRXkmdmggCKNAc94kTWvFHew3XpLYfnFkkn0hqY/hocRbXqGC/L0vu0ixMTV8OWjK3YubP9lNcEVY4/UP6P2cQ==}
-    dev: true
 
   /@nodelib/fs.scandir@2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -466,6 +473,25 @@ packages:
 
   /@techor/log@2.1.15:
     resolution: {integrity: sha512-GtKuSHimZWg53lwYOkiREL1dVYUxl4Pg8MatfdQdoLr5iylR645jQgobKgdvDfalgucp5YdwG4ROFjNIfDP5Fg==}
+    dev: true
+
+  /@tolgee/core@5.8.2:
+    resolution: {integrity: sha512-esUjIBWI2gN+iKVE4TkUNV5yW3+RhpHn71LVcSU689ZglLIuagyiWUkEiVleZdYo3r/VQYU1aDYG5ZHfdzYgzQ==}
+    dev: true
+
+  /@tolgee/svelte@5.8.2(svelte@3.58.0):
+    resolution: {integrity: sha512-7pI++ba2JnxIm7gj8Co0v7lnlEbeL7x2ye94gUNNxnAsgcjyz3dI2dL18Zz9JscOkSsqR6u+2yjq+0awWSveOQ==}
+    peerDependencies:
+      svelte: ^3.29.0
+    dependencies:
+      '@tolgee/web': 5.8.2
+      svelte: 3.58.0
+    dev: true
+
+  /@tolgee/web@5.8.2:
+    resolution: {integrity: sha512-57x8tOijL5FB+Mpc0xT+3+AtUtA3aAuMuYrZN/eCX3RXyjGV7QbQ6DSQahBV0WdUiHSuYIVyEXV4vO7ZC2wo5w==}
+    dependencies:
+      '@tolgee/core': 5.8.2
     dev: true
 
   /@types/chai-subset@1.3.3:
