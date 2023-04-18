@@ -1,4 +1,4 @@
-# oskargmerek.com
+# Personal website :: oskargmerek.com
 
 ## Description
 
@@ -35,17 +35,17 @@ After a longer brainstorming session, I decided to focus on building my personal
 ## Plan
 
 1. Research and analysis:
-    - [ ] Analyze personal branding strategies and success stories for web developers.
-    - [ ] Identify key features and functionalities for a personal website that will best showcase my skills and interests.
-    - [ ] Research the latest web development trends, technologies, and best practices.
+    - [x] Analyze personal branding strategies and success stories for web developers.
+    - [x] Identify key features and functionalities for a personal website that will best showcase my skills and interests.
+    - [x] Research the latest web development trends, technologies, and best practices.
 
 2. Project planning:
     - [ ] Create a comprehensive project plan, including objectives, milestones, and deadlines*.
-    - [ ] Identify tools, technologies, and frameworks required for the project, such as Git, GitHub, HTML, CSS, JavaScript, React, and others.
+    - [x] Identify tools, technologies, and frameworks required for the project, such as Git, GitHub, HTML, CSS, JavaScript, Svelte, and others.
     - [ ] Establish a clear visual identity for the personal brand, including logo, color scheme, typography, and overall design.
 
 3. Develop the website:
-    - [ ] Set up version control with Git and create a GitHub repository for the project.
+    - [x] Set up version control with Git and create a GitHub repository for the project.
     - [ ] Develop the website's structure, layout, and design based on the established visual identity.
     - [ ] Implement the necessary features and functionalities, such as portfolio, contact form, and notes.
     - [ ] Implement the additional features and functionalities, such as blog, notes, and resource collection.
@@ -60,6 +60,7 @@ After a longer brainstorming session, I decided to focus on building my personal
     - [ ] Curate a collection of resources, services, and products that I find useful or intriguing.
 
 5. Launch the website:
+    - [ ] Configure Continuous Integration for beta releases
     - [ ] Deploy the website on a suitable hosting platform.
     - [ ] Configure a custom domain for the website (oskargmerek.com).
     - [ ] Announce the launch of the website on social media and other relevant channels.
