@@ -11,6 +11,7 @@
 	} from '@tolgee/svelte';
 	import { languages, defaultLang } from '$lib/i18n/locales';
 	import type { LayoutData } from './$types';
+	import { inject } from '@vercel/analytics';
 
 	export let data: LayoutData;
 
@@ -30,6 +31,9 @@
 			apiUrl: import.meta.env.VITE_TOLGEE_API_URL,
 			apiKey: import.meta.env.VITE_TOLGEE_API_KEY
 		});
+
+	// Vercel Analytics injection
+	inject();
 </script>
 
 <LazyCSSProvider config={loadConfig}>
