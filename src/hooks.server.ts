@@ -2,7 +2,7 @@ import type { Handle } from '@sveltejs/kit';
 import { renderIntoHTML } from '@master/css';
 import { config } from './master.css';
 import { sequence } from '@sveltejs/kit/hooks';
-import { defaultLang } from '$lib/helpers/locales';
+import { defaultLang } from '$lib/i18n/locales';
 
 const handleLang = (async ({ event, resolve }) => {
 	const [, lang] = event.url.pathname.split('/');
