@@ -5,11 +5,13 @@ import { sequence } from '@sveltejs/kit/hooks';
 import { defaultLang } from '$lib/i18n/locales';
 
 const handleLang = (async ({ event, resolve }) => {
-	const [, lang] = event.url.pathname.split('/');
+	console.log('pathname.length', event.url.pathname.split('/').length);
+	const [, lang, ...rest] = event.url.pathname.split('/');
 	if (lang === defaultLang && event.url.pathname !== '/') {
+		// If default language is in the url path, remove it
 		return new Response('Redirect', {
 			status: 303,
-			headers: { Location: `/` }
+			headers: { Location: `/${rest}` }
 		});
 	}
 
