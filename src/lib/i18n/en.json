@@ -1,3 +1,6 @@
 {
+  "hello_world" : "Hello, world",
+  "i_am" : "I'm",
+  "landing_hello_world_hero" : "an aspiring web developer on a mission to conquer the digital landscape. Fueled by\n\t\t\t\t\tcuriosity and a hunger for growth, I am constantly exploring new technologies and\n\t\t\t\t\ttechniques to sharpen my skills. While my portfolio may be modest for now, my\n\t\t\t\t\tdetermination and passion speak volumes. Stick around, witness my journey, and let's\n\t\t\t\t\tconnect – we might just collaborate on something extraordinary!",
   "this_is_a_key" : "THIS IS KEY"
 }
