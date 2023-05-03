@@ -1,0 +1,99 @@
+{
+	"release": {
+		"prerelease": true
+	},
+	"plugins": [
+		"git-tag",
+		"all-contributors",
+		[
+			"conventional-commits",
+			{
+				"preset": "angular"
+			}
+		],
+		[
+			"released",
+			{
+				"label": ":shipit:",
+				"prereleaseLabel": "🚧"
+			}
+		],
+		[
+			"omit-commits",
+			{
+				"subject": [
+					"WIP",
+					"`WIP`"
+				],
+				"labels": [
+					"WIP",
+					"`WIP`"
+				]
+			}
+		]
+	],
+	"labels": [
+		{
+			"name": "feat",
+			"changelogTitle": ":sparkles: New features or functionality",
+			"releaseType": "minor"
+		},
+		{
+			"name": "fix",
+			"changelogTitle": ":wrench: Bug fixes and issue resolution",
+			"releaseType": "patch"
+		},
+		{
+			"name": "improve",
+			"changelogTitle": "🧐 Code improvements, refactoring, or formatting changes",
+			"releaseType": "patch"
+		},
+		{
+			"name": "docs",
+			"changelogTitle": "📝 Documentation",
+			"releaseType": "patch"
+		},
+		{
+			"name": "test",
+			"changelogTitle": "🧪 Test-related changes",
+			"releaseType": "patch"
+		},
+		{
+			"name": "trivial",
+			"changelogTitle": "🧑‍💻 Routine tasks or non-functional updates",
+			"releaseType": "patch"
+		},
+		{
+			"name": "deps",
+			"changelogTitle": "📦️ Dependency management",
+			"releaseType": "patch"
+		},
+		{
+			"name": "i18n",
+			"changelogTitle": "🌐 Internationalization and localization",
+			"releaseType": "patch"
+		},
+		{
+			"name": "security",
+			"changelogTitle": ":lock: Security-related changes",
+			"releaseType": "patch"
+		},
+		{
+			"name": "seo",
+			"changelogTitle": "🚀 SEO-related improvements and optimizations",
+			"releaseType": "patch"
+		},
+		{
+			"name": "NO!",
+			"releaseType": "skip"
+		},
+		{
+			"name": "Autobots, rollout!",
+			"releaseType": "release"
+		}
+	],
+	"owner": "oskar-gmerek",
+	"repo": "oskargmerek.com",
+	"name": "Oskar Gmerek",
+	"email": "oskarg90@gmail.com"
+}
