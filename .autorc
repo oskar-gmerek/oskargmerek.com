@@ -1,4 +1,7 @@
 {
+	"shipit": {
+		"prerelease": true
+	},
 	"release": {
 		"prerelease": true
 	},
