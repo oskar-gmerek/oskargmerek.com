@@ -1,10 +1,16 @@
 {
-	"release": {
-		"prerelease": true
-	},
+	"prereleaseBranches": [
+		"beta",
+		"next"
+	],
 	"plugins": [
 		"git-tag",
-		"released",
+		[
+			"released",
+			{
+				"prereleaseLabel": "🚧 "
+			}
+		],
 		[
 			"conventional-commits",
 			{
