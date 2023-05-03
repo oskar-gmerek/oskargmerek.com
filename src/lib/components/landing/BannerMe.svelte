@@ -1,10 +1,9 @@
 <script lang="ts">
-	import oskar_img from '$lib/images/after_photoshop3BW.png?w=295&h=420&format=webp&imagetools';
-	import oskar_img_x2 from '$lib/images/after_photoshop3BW.png?w=590&h=840&format=webp&imagetools';
+	import oskar_img from '$lib/images/web_developer_oskar_gmerek.png?w=295&h=420&format=webp&imagetools';
+	import oskar_img_x2 from '$lib/images/web_developer_oskar_gmerek.png?w=590&h=840&format=webp&imagetools';
 	import codeimg from '$lib/images/welcome-html-black.png?w=340&h=195&format=webp&imagetools';
 	import codeimg_retina from '$lib/images/welcome-html-black.png?w=680&h=390&format=webp&imagetools';
-	// import videobackground from '$lib/images/squares-87881-180x480.mp4';
-	import videobackground from '$lib/images/video2.mp4';
+	import videobackground from '$lib/images/web_development_video_background.mp4';
 
 	let className = '';
 	export { className as class };
