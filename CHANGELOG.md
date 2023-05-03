@@ -2,6 +2,20 @@
 
 #### :sparkles: Supplementary
 
+
+#### :wrench: Improvement
+
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
+# v0.2.0 (Wed May 03 2023)
+
+#### :sparkles: Supplementary
+
 - translation keys, intro hero section [#28](https://github.com/oskar-gmerek/oskargmerek.com/pull/28) ([@oskar-gmerek](https://github.com/oskar-gmerek))
 
 #### :wrench: Improvement
