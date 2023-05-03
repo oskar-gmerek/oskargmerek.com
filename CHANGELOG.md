@@ -1,3 +1,15 @@
+# v0.3.2 (Wed May 03 2023)
+
+#### :wrench: Improvement
+
+- improve: drop pre-releases [#33](https://github.com/oskar-gmerek/oskargmerek.com/pull/33) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.3.1 (Wed May 03 2023)
 
 #### :wrench: Improvement
