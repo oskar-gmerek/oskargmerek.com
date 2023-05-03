@@ -1,3 +1,14 @@
+# v0.3.1 (Wed May 03 2023)
+
+#### :wrench: Improvement
+
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.2.0 (Wed May 03 2023)
 
 #### :sparkles: Supplementary
