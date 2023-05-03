@@ -1,3 +1,26 @@
+# v0.2.0 (Wed May 03 2023)
+
+#### :sparkles: Supplementary
+
+- translation keys, intro hero section [#28](https://github.com/oskar-gmerek/oskargmerek.com/pull/28) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### :wrench: Improvement
+
+- fix: change `npx` to `pnpx` [#30](https://github.com/oskar-gmerek/oskargmerek.com/pull/30) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+- release automation [#29](https://github.com/oskar-gmerek/oskargmerek.com/pull/29) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+- `trivial`: add config for `shipit` option [#27](https://github.com/oskar-gmerek/oskargmerek.com/pull/27) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+- `feat`: top navigation [#26](https://github.com/oskar-gmerek/oskargmerek.com/pull/26) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+- `deps`: `imagetools` integration for image optimization [#25](https://github.com/oskar-gmerek/oskargmerek.com/pull/25) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+- `feat`: `auto` release management integration #20 [#23](https://github.com/oskar-gmerek/oskargmerek.com/pull/23) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+- `fix`: correctly remove `default` language from `url` [#19](https://github.com/oskar-gmerek/oskargmerek.com/pull/19) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+- `feat`: integrate vercel analytics [#17](https://github.com/oskar-gmerek/oskargmerek.com/pull/17) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.1.0 (Wed May 03 2023)
 
 #### :sparkles: Supplementary
