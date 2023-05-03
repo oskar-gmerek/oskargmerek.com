@@ -1,3 +1,15 @@
+# v0.3.3 (Wed May 03 2023)
+
+#### :wrench: Improvement
+
+- some trivial changes (test of version bump) [#34](https://github.com/oskar-gmerek/oskargmerek.com/pull/34) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.3.2 (Wed May 03 2023)
 
 #### :wrench: Improvement
