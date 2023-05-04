@@ -1,3 +1,15 @@
+# v0.3.5 (Thu May 04 2023)
+
+#### :wrench: Improvement
+
+- fix: trigger area of `hover` effect of `BannerMe` component [#38](https://github.com/oskar-gmerek/oskargmerek.com/pull/38) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.3.4 (Thu May 04 2023)
 
 #### :wrench: Improvement
