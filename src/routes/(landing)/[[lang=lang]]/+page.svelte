@@ -41,8 +41,7 @@
 					/>
 				</p>
 			</div>
-
-			<BannerMe class="banner hidden block@sm  " />
+			<BannerMe class="banner hidden block@sm " />
 		</div>
 	</div>
 </div>

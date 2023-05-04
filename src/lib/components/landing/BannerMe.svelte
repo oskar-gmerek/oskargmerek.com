@@ -9,50 +9,41 @@
 	export { className as class };
 </script>
 
-<div class={`obj:cover ` + className}>
-	<picture class="">
-		<img
-			srcset={`${codeimg}, ${codeimg_retina} 2x`}
-			src={codeimg}
-			alt="web development javascript code snippet illustration"
-			class="codeimg3 block rel h:195 w:340 z:20 left:-150 top:280 transform:rotate(5deg) transform:bottom|right ~all|300ms|ease-in ~delay:300ms box-shadow:3|3|10|black/.75 r:15
+<div class={`obj:cover overflow:hidden` + className}>
+	<img
+		srcset={`${codeimg}, ${codeimg_retina} 2x`}
+		src={codeimg}
+		alt="web development javascript code snippet illustration"
+		class="codeimg3 block rel h:195 w:340 z:20 left:-150 top:280 transform:rotate(5deg) transform:bottom|right ~all|300ms|ease-in ~delay:300ms box-shadow:3|3|10|black/.75 r:15
 			"
-		/>
-	</picture>
-	<picture class="">
-		<img
-			srcset={`${codeimg}, ${codeimg_retina} 2x`}
-			src={codeimg}
-			alt="web development typescript code snippet illustration"
-			class="h:195 w:340 codeimg2 block rel z:20 left:-150 top:85 transform:rotate(5deg) transform:bottom|right transform:bottom|right ~all|300ms|ease-in ~delay:200ms box-shadow:3|3|10|black/.75 r:15
+	/>
+	<img
+		srcset={`${codeimg}, ${codeimg_retina} 2x`}
+		src={codeimg}
+		alt="web development typescript code snippet illustration"
+		class="h:195 w:340 codeimg2 block rel z:20 left:-150 top:85 transform:rotate(5deg) transform:bottom|right transform:bottom|right ~all|300ms|ease-in ~delay:200ms box-shadow:3|3|10|black/.75 r:15
 			"
-		/>
-	</picture>
-	<picture class="">
-		<img
-			srcset={`${codeimg}, ${codeimg_retina} 2x`}
-			src={codeimg}
-			alt="web development svelte code snippet illustration"
-			class="h:195 w:340 codeimg1 block rel z:90 left:-150 top:-110 transform:rotate(5deg) transform:bottom|right transform:bottom|right ~all|300ms|ease-in ~delay:100ms box-shadow:3|3|10|black/.75 r:15
+	/>
+	<img
+		srcset={`${codeimg}, ${codeimg_retina} 2x`}
+		src={codeimg}
+		alt="web development svelte code snippet illustration"
+		class="h:195 w:340 codeimg1 block rel z:90 left:-150 top:-110 transform:rotate(5deg) transform:bottom|right transform:bottom|right ~all|300ms|ease-in ~delay:100ms box-shadow:3|3|10|black/.75 r:15
 			"
-		/>
-	</picture>
-	<picture class="rel left:0 z:80 top:-585 float:right overflow:clip">
-		<img
-			srcset={`${oskar_img}, ${oskar_img_x2} 2x`}
-			src={oskar_img}
-			alt=""
-			class="rel left:10 brightness(0) h:420 w:295"
-		/>
-		<img
-			srcset={`${oskar_img}, ${oskar_img_x2} 2x`}
-			src={oskar_img}
-			alt="web developer"
-			class="rel left:0 top:-420 h:420 w:295
+	/>
+	<img
+		srcset={`${oskar_img}, ${oskar_img_x2} 2x`}
+		src={oskar_img}
+		alt=""
+		class="rel left:60 top:-585 brightness(0) h:420 w:295 z:80"
+	/>
+	<img
+		srcset={`${oskar_img}, ${oskar_img_x2} 2x`}
+		src={oskar_img}
+		alt="web developer"
+		class="rel left:50 top:-1005 h:420 w:295 z:80
 			"
-		/>
-	</picture>
-
+	/>
 	<video
 		autoplay
 		loop
