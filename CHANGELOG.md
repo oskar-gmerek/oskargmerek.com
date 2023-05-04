@@ -1,3 +1,15 @@
+# v0.3.4 (Thu May 04 2023)
+
+#### :wrench: Improvement
+
+- fix: load languages static data to `tolgee` provider [#36](https://github.com/oskar-gmerek/oskargmerek.com/pull/36) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.3.3 (Wed May 03 2023)
 
 #### :wrench: Improvement
