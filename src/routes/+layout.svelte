@@ -12,6 +12,8 @@
 	import { languages, defaultLang } from '$lib/i18n/locales';
 	import type { LayoutData } from './$types';
 	import { inject } from '@vercel/analytics';
+	import * as englishLang from '$lib/i18n/en.json';
+	import * as polishLang from '$lib/i18n/pl.json';
 
 	export let data: LayoutData;
 
@@ -23,8 +25,10 @@
 		.use(LanguageDetector())
 		.init({
 			language: data.lang ? data.lang : defaultLang,
+
 			staticData: {
-				[data.lang]: data.langData
+				en: englishLang,
+				pl: polishLang
 			},
 			defaultLanguage: data.lang ? data.lang : defaultLang,
 			availableLanguages: Object.keys(languages),
