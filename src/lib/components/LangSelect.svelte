@@ -3,6 +3,7 @@
 	import { getTolgee } from '@tolgee/svelte';
 	import { languages } from '$lib/i18n/locales';
 	import { browser } from '$app/environment';
+	import Select from './select/Select.svelte';
 	const tolgee = getTolgee(['language']);
 
 	let value = $tolgee.getLanguage();
@@ -23,11 +24,18 @@
 		}
 	}
 
-	const langs = Object.entries(languages);
+	const langs = Object.entries(languages).map(([label, value]) => ({ label, value }));
 </script>
 
-<select bind:value on:change={handleLanguageChange}>
-	{#each langs as [code, lang]}
-		<option value={code}>{lang}</option>
-	{/each}
-</select>
+<Select
+	bind:value
+	on:change={() => handleLanguageChange()}
+	mcss="py:4 "
+	containerStyle="mt:0! mb:0!"
+>
+	<svelte:fragment slot="options">
+		{#each langs as lang}
+			<option value={lang.label}>{lang.value}</option>
+		{/each}
+	</svelte:fragment>
+</Select>
