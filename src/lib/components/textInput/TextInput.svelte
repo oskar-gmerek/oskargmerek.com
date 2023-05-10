@@ -7,7 +7,7 @@
 	export let description = '';
 	export let placeholder = '';
 	let className =
-		'w:full h:full p:16 pr:30 outline:4|solid|rgb(8,19,33) outline:4|solid|orange:focus ~outline|0.5s r:7 ';
+		'w:full h:full p:16 outline:4|solid|rgb(8,19,33) outline:4|solid|orange:focus ~outline|0.5s r:7 ';
 
 	const id = randomString(7);
 </script>
