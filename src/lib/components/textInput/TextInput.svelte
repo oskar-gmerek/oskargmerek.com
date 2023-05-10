@@ -16,7 +16,7 @@
 	<label for={id}>{label}</label>
 {/if}
 {#if description}
-	<div class="fg:white/.6">Description of input</div>
+	<div class="fg:white/.6">{description}</div>
 {/if}
 <div class="bg:rgb(8,19,33) mt:10 mb:30">
 	<input {id} class={className} type="text" {name} bind:value {placeholder} />
