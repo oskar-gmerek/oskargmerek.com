@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
+	import Button from '$lib/components/button/Button.svelte';
 	import Select from '$lib/components/select/Select.svelte';
-	import TextInput from '$lib/components/textInput/TextInput.svelte';
+	import TextInput from '$lib/components/textinput/TextInput.svelte';
 	import TextArea from '$lib/components/textarea/TextArea.svelte';
 	import { fade, fly, slide } from 'svelte/transition';
 
-	let emailSubject = 'choose';
+	$: emailSubject = 'choose';
 	let emailMessage = '';
 	let website = 'https://';
 	let subjectOptions = [
@@ -22,13 +23,29 @@
 		{ label: 'Fixed', value: 'fixed' }
 	];
 	let deadlineType = 'flexible';
+	let projectName = '';
 	let projectDetails = '';
 	let budget = '';
 	let additionalRequirements = '';
 	let deadline = '';
-	// let deadline = '';
-	// let deadline = '';
-	// let deadline = '';
+	let otherContact = '';
+	let companyName = '';
+	let workPosition = '';
+	let jobDescription = '';
+	let workMode = '';
+	let workModeOptions = [
+		{ label: 'Remote', value: 'remote' },
+		{ label: 'On-site', value: 'onsite' },
+		{ label: 'Hybrid', value: 'hybrid' },
+		{ label: 'Hybrid (Flexible Office)', value: 'hybrid_flexible' }
+	];
+	let workLocation = '';
+	let salaryOffer = '';
+	let additionalInformation = '';
+
+	let userName = '';
+	let emailAddress = '';
+	let mobileNumber = '';
 </script>
 
 <div class="rel bg:#17212d p:20 p:40@sm p:60@lg">
@@ -46,8 +63,7 @@
 				in:slide={{ delay: 250, duration: 300, axis: 'y' }}
 				out:slide={{ delay: 250, duration: 300, axis: 'y' }}
 			>
-				<TextInput bind:value={emailSubject} name="emailSubject" label="Full name" />
-
+				<TextInput bind:value={projectName} name="projectName" label="Project Name" />
 				<TextArea bind:value={projectDetails} name="projectDetails" label="Project Details" />
 				<TextInput bind:value={budget} name="budget" label="Budget" />
 				<Select
@@ -55,30 +71,61 @@
 					name="deadlineType"
 					label="Deadline"
 					options={deadlineTypeOptions}
-				>
-					<option value={`fixed`}>{`Fixed Deadline`}</option>
-					<option value={`flexible`}>{`Flexible Deadline`}</option>
-				</Select>
+				/>
 				{#if emailSubject === 'web_dev' && deadlineType === 'fixed'}
-					<TextInput bind:value={deadline} name="deadline" label="Deadline Date" />
+					<div
+						in:slide={{ delay: 250, duration: 300, axis: 'y' }}
+						out:slide={{ delay: 250, duration: 300, axis: 'y' }}
+					>
+						<TextInput bind:value={deadline} name="deadline" label="Deadline Date" />
+					</div>
 				{/if}
 				<TextArea
 					bind:value={additionalRequirements}
 					name="additionalRequirements"
 					label="Additional Requirements"
-					rows={3}
 				/>
 			</div>
 		{:else if emailSubject === 'job_offer'}
-			<TextInput bind:value={emailSubject} name="emailSubject" label="Name" />
-			<TextInput bind:value={emailSubject} name="emailSubject" label="Name" />
-			<TextInput bind:value={emailSubject} name="emailSubject" label="Email" />
-			<TextInput bind:value={emailSubject} name="emailSubject" label="Phone number" />
-			<TextInput bind:value={website} name="website" label="Website" />
-			<TextArea bind:value={emailMessage} name="emailSubject" label="Message" />
+			<TextInput bind:value={companyName} name="companyName" label="Company Name" />
+			<TextInput bind:value={website} name="website" label="Company Website" />
+			<TextInput bind:value={workPosition} name="workPosition" label="Position" />
+			<TextArea bind:value={jobDescription} name="jobDescription" label="Job Description" />
+			<Select bind:value={workMode} name="workMode" label="Work Mode" options={workModeOptions} />
+			{#if ['onsite', 'hybrid', 'hybrid_flexible'].includes(workMode)}
+				<div
+					in:slide={{ delay: 250, duration: 300, axis: 'y' }}
+					out:slide={{ delay: 250, duration: 300, axis: 'y' }}
+				>
+					<TextInput bind:value={workLocation} name="workLocation" label="Location" />
+				</div>
+			{/if}
+			<TextInput
+				bind:value={salaryOffer}
+				name="emailSubject"
+				label="Salary Offer"
+				placeholder="ex. 630 GBP weekly + bonuses "
+			/>
+			<TextArea
+				bind:value={additionalInformation}
+				name="additionalInformation"
+				label="Additional"
+			/>
 		{/if}
 		{#if emailSubject !== 'choose'}
-			<button>Send!</button>
+			<div
+				in:slide={{ delay: 250, duration: 300, axis: 'y' }}
+				out:slide={{ delay: 250, duration: 300, axis: 'y' }}
+			>
+				<h2>Contact Details <span class="fg:red">*</span></h2>
+				<TextInput bind:value={userName} name="userName" label="Full name" />
+				<TextInput bind:value={emailAddress} name="userName" label="Email address" />
+				<TextInput bind:value={mobileNumber} name="userName" label="Mobile number" />
+				<TextArea bind:value={otherContact} name="otherContact" label="Other Contact Ways" />
+				<div class="flex jc:end">
+					<Button />
+				</div>
+			</div>
 		{/if}
 	</form>
 </div>
