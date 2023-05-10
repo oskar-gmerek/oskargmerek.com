@@ -2,7 +2,7 @@
 	import { enhance } from '$app/forms';
 	import Button from '$lib/components/button/Button.svelte';
 	import Select from '$lib/components/select/Select.svelte';
-	import TextInput from '$lib/components/textinput/TextInput.svelte';
+	import TextInput from '$lib/components/textInput/TextInput.svelte';
 	import TextArea from '$lib/components/textarea/TextArea.svelte';
 	import { fade, fly, slide } from 'svelte/transition';
 
