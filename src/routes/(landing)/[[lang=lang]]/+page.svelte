@@ -43,9 +43,9 @@
 	</div>
 </div>
 
-<div class=" mt:20 bg:green w:full h:300 z:90">Test</div>
+<!-- <div class=" mt:20 bg:green w:full h:300 z:90">Test</div>
 <div class=" mt:20 bg:red w:full h:300 z:90">Test</div>
-<div class=" mt:20 bg:blue w:full h:300 z:90">Test</div>
+<div class=" mt:20 bg:blue w:full h:300 z:90">Test</div> -->
 
 <!-- <T keyName="key" defaultValue="This is default" />
 	
