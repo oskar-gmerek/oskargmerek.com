@@ -1,3 +1,15 @@
+# v0.4.0 (Wed May 10 2023)
+
+#### :sparkles: Supplementary
+
+- Beta [#42](https://github.com/oskar-gmerek/oskargmerek.com/pull/42) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.3.5 (Thu May 04 2023)
 
 #### :wrench: Improvement
