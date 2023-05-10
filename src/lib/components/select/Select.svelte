@@ -15,7 +15,7 @@
 		| null;
 	export let options: Options = null;
 	let className =
-		'w:full h:full min-w:max p:16 pr:30 outline:4|solid|rgb(8,19,33) outline:4|solid|orange:focus ~outline|0.5s r:7  appearance:none z:10';
+		'w:full h:full   p:16 pr:30 outline:4|solid|rgb(8,19,33) outline:4|solid|orange:focus ~outline|0.5s r:7  appearance:none z:10 ';
 	export let mcss = '';
 
 	const id = randomString(7) + name;
@@ -37,7 +37,7 @@
 			<slot name="options" />
 		{/if}
 	</select>
-	<div class="rel">
+	<div class="arrowDown rel">
 		<div class="abs top:-7 left:-20 f:12">⋁</div>
 	</div>
 </div>

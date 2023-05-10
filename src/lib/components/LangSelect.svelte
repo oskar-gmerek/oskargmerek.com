@@ -31,7 +31,7 @@
 	bind:value
 	on:change={() => handleLanguageChange()}
 	mcss="py:4 "
-	containerStyle="mt:0! mb:0!"
+	containerStyle="mt:0! mb:0! min-w:max"
 >
 	<svelte:fragment slot="options">
 		{#each langs as lang}
