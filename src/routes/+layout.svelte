@@ -43,7 +43,7 @@
 <LazyCSSProvider config={loadConfig}>
 	<TolgeeProvider {tolgee}>
 		<div slot="fallback" class="m:auto fg:orange-70">Loading translations...</div>
-		<div class="fg:white">
+		<div class="fg:white caret-color:orange accent-color:orange">
 			<slot />
 		</div>
 	</TolgeeProvider>
