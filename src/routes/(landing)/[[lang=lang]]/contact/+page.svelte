@@ -174,7 +174,7 @@
 				bind:value={naturePartnership}
 				name="naturePartnership"
 				label="Nature of Partnership"
-				placeholder="e.g. New AI Service Promotion"
+				placeholder="The nature of the Partnership"
 			/>
 			<TextArea
 				bind:value={expectedBenefits}
