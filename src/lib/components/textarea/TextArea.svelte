@@ -4,19 +4,23 @@
 
 	export let value = '';
 	export let name = '';
-	export let rows = 2;
 	export let maxlength = 5000;
 	export let label = '';
 	export let description = '';
 	export { className as class };
 
 	const id = randomString(7);
-
 	let className =
-		'w:full h:full  p:16 outline:4|solid|rgb(8,19,33) outline:4|solid|orange:focus ~outline|0.5s r:7|7|0|7 resize:vertical  ';
+		'w:full h:54px  p:16 outline:4|solid|rgb(8,19,33) outline:4|solid|orange:focus ~outline|0.5s r:7 resize:none  ';
 
-	$: rows = value.split(/\r\n|\r|\n/).length;
-	$: console.log(value.split(/\r\n|\r|\n/).length);
+	let textarea: HTMLTextAreaElement;
+
+	const textareaResize = () => {
+		if (textarea) {
+			textarea.style.height = '54px';
+			textarea.style.height = `${textarea.scrollHeight}px`;
+		}
+	};
 </script>
 
 {#if label}
@@ -29,11 +33,12 @@
 <div class="bg:rgb(8,19,33) mt:10 mb:50 r:7">
 	<textarea
 		{id}
-		class={className}
 		{name}
-		bind:value
 		{maxlength}
-		rows={value.split(/\r\n|\r|\n/).length || rows}
+		class={className}
+		bind:this={textarea}
+		bind:value
+		on:input={textareaResize}
 	/>
 	{#if value.length > 0}
 		<div
