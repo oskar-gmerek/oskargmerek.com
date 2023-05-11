@@ -4,7 +4,7 @@
 	import Select from '$lib/components/select/Select.svelte';
 	import TextInput from '$lib/components/textInput/TextInput.svelte';
 	import TextArea from '$lib/components/textarea/TextArea.svelte';
-	import { fade, fly, slide } from 'svelte/transition';
+	import { slide } from 'svelte/transition';
 
 	$: emailSubject = 'choose';
 	let emailMessage = '';
@@ -57,7 +57,7 @@
 	let investmentDetails = '';
 	let expectedReturns = '';
 
-	let userName = '';
+	let fullName = '';
 	let emailAddress = '';
 	let mobileNumber = '';
 </script>
@@ -299,20 +299,20 @@
 			>
 				<h2>Contact Details <span class="fg:red">*</span></h2>
 				<TextInput
-					bind:value={userName}
-					name="userName"
+					bind:value={fullName}
+					name="fullName"
 					label="Full name"
 					placeholder="e.g. John Doe"
 				/>
 				<TextInput
 					bind:value={emailAddress}
-					name="userName"
+					name="emailAddress"
 					label="Email address"
 					placeholder="e.g. john.doe@example.com"
 				/>
 				<TextInput
 					bind:value={mobileNumber}
-					name="userName"
+					name="mobileNumber"
 					label="Mobile number"
 					placeholder="e.g. 07305112233"
 				/>
