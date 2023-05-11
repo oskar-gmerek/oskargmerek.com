@@ -42,6 +42,8 @@
 	let workLocation = '';
 	let salaryOffer = '';
 	let additionalInformation = '';
+	let naturePartnership = '';
+	let expectedBenefits = '';
 
 	let userName = '';
 	let emailAddress = '';
@@ -58,6 +60,7 @@
 			label="Subject"
 			options={subjectOptions}
 		/>
+
 		{#if emailSubject === 'web_dev'}
 			<div
 				in:slide={{ delay: 250, duration: 300, axis: 'y' }}
@@ -144,7 +147,7 @@
 			{/if}
 			<TextInput
 				bind:value={salaryOffer}
-				name="emailSubject"
+				name="salaryOffer"
 				label="Salary Offer"
 				placeholder="e.g. 630 GBP weekly + bonuses "
 			/>
@@ -154,7 +157,39 @@
 				label="Additional Information"
 				placeholder="Any informations not included above "
 			/>
+		{:else if emailSubject === 'partnership'}
+			<TextInput
+				bind:value={companyName}
+				name="companyName"
+				label="Company Name"
+				placeholder="e.g. SurrealDB Ltd"
+			/>
+			<TextInput
+				bind:value={website}
+				name="website"
+				label="Company Website"
+				placeholder="e.g. https://example.com"
+			/>
+			<TextArea
+				bind:value={naturePartnership}
+				name="naturePartnership"
+				label="Nature of Partnership"
+				placeholder="e.g. New AI Service Promotion"
+			/>
+			<TextArea
+				bind:value={expectedBenefits}
+				name="expectedBenefits"
+				label="Expected Benefits"
+				placeholder="The goals of Partnership"
+			/>
+			<TextArea
+				bind:value={additionalInformation}
+				name="additionalInformation"
+				label="Additional Information"
+				placeholder="Any informations not included above "
+			/>
 		{/if}
+
 		{#if emailSubject !== 'choose'}
 			<div
 				in:slide={{ delay: 250, duration: 300, axis: 'y' }}
