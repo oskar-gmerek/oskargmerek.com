@@ -1,3 +1,15 @@
+# v0.4.1 (Thu May 11 2023)
+
+#### :wrench: Improvement
+
+- fix: calculate `TextArea` height based on `scrollHeight` [#45](https://github.com/oskar-gmerek/oskargmerek.com/pull/45) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.4.0 (Wed May 10 2023)
 
 #### :sparkles: Supplementary
