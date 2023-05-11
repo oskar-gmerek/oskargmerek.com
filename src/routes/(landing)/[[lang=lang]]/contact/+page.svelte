@@ -44,6 +44,16 @@
 	let additionalInformation = '';
 	let naturePartnership = '';
 	let expectedBenefits = '';
+	let organisationType = '';
+	let organisationTypeOptions = [
+		{ label: 'Company', value: 'company' },
+		{ label: 'Charity', value: 'charity' },
+		{ label: 'Freelance', value: 'freelance' },
+		{ label: 'Other', value: 'other' }
+	];
+	let organisationName = '';
+	let collaborationDetails = '';
+	let expectedOutcomes = '';
 
 	let userName = '';
 	let emailAddress = '';
@@ -181,6 +191,52 @@
 				name="expectedBenefits"
 				label="Expected Benefits"
 				placeholder="The goals of Partnership"
+			/>
+			<TextArea
+				bind:value={additionalInformation}
+				name="additionalInformation"
+				label="Additional Information"
+				placeholder="Any informations not included above "
+			/>
+		{:else if emailSubject === 'collaboration'}
+			<Select
+				bind:value={organisationType}
+				name="organisationType"
+				label="Organization Type"
+				options={organisationTypeOptions}
+			/>
+			{#if organisationType === 'company'}
+				<TextInput
+					bind:value={companyName}
+					name="companyName"
+					label="Company Name"
+					placeholder="e.g. SurrealDB Ltd"
+				/>
+			{:else if organisationType === 'charity'}
+				<TextInput
+					bind:value={organisationName}
+					name="organisationName"
+					label="Organisation Name"
+					placeholder="e.g. British Red Cross"
+				/>
+			{/if}
+			<TextInput
+				bind:value={website}
+				name="website"
+				label="Website"
+				placeholder="e.g. https://example.com"
+			/>
+			<TextArea
+				bind:value={collaborationDetails}
+				name="collaborationDetails"
+				label="Collaboration Details"
+				placeholder="The detail of the Collaboration"
+			/>
+			<TextArea
+				bind:value={expectedOutcomes}
+				name="expectedOutcomes"
+				label="Expected Outcomes"
+				placeholder="The goals of the Collaboration"
 			/>
 			<TextArea
 				bind:value={additionalInformation}
