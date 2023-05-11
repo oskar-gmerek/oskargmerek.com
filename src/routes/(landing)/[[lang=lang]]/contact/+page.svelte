@@ -277,6 +277,19 @@
 				label="Additional Information"
 				placeholder="Any informations not included above "
 			/>
+		{:else if emailSubject === 'other'}
+			<TextArea
+				bind:value={emailMessage}
+				name="emailMessage"
+				label="Message"
+				placeholder="Any informations not included above "
+			/>
+			<TextArea
+				bind:value={additionalInformation}
+				name="additionalInformation"
+				label="Additional Information"
+				placeholder="Any informations not included above "
+			/>
 		{/if}
 
 		{#if emailSubject !== 'choose'}
