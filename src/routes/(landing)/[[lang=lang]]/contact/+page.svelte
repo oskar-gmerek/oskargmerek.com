@@ -8,7 +8,7 @@
 
 	$: emailSubject = 'choose';
 	let emailMessage = '';
-	let website = 'https://';
+	let website = '';
 	let subjectOptions = [
 		{ label: 'Please select the appropriate subject', value: 'choose' },
 		{ label: 'Web Development', value: 'web_dev' },
@@ -67,7 +67,7 @@
 					bind:value={projectName}
 					name="projectName"
 					label="Project Name"
-					placeholder="ex. Retro Barbers Website"
+					placeholder="e.g. Retro Barbers Website"
 				/>
 				<TextArea
 					bind:value={projectDetails}
@@ -75,12 +75,7 @@
 					label="Project Details"
 					placeholder="Detailed description of project"
 				/>
-				<TextInput
-					bind:value={budget}
-					name="budget"
-					label="Budget"
-					placeholder="ex. 1200-1600 GBP"
-				/>
+				<TextInput bind:value={budget} name="budget" label="Budget" placeholder="e.g. 1300 GBP" />
 				<Select
 					bind:value={deadlineType}
 					name="deadlineType"
@@ -99,33 +94,65 @@
 					bind:value={additionalRequirements}
 					name="additionalRequirements"
 					label="Additional Requirements"
-					placeholder="All requirements and informations not included above"
+					placeholder="Any requirements and informations not included above"
 				/>
 			</div>
 		{:else if emailSubject === 'job_offer'}
-			<TextInput bind:value={companyName} name="companyName" label="Company Name" />
-			<TextInput bind:value={website} name="website" label="Company Website" />
-			<TextInput bind:value={workPosition} name="workPosition" label="Position" />
-			<TextArea bind:value={jobDescription} name="jobDescription" label="Job Description" />
-			<Select bind:value={workMode} name="workMode" label="Work Mode" options={workModeOptions} />
+			<TextInput
+				bind:value={companyName}
+				name="companyName"
+				label="Company Name"
+				placeholder="e.g. SurrealDB Ltd"
+			/>
+			<TextInput
+				bind:value={website}
+				name="website"
+				label="Company Website"
+				placeholder="e.g. https://example.com"
+			/>
+			<TextInput
+				bind:value={workPosition}
+				name="workPosition"
+				label="Position"
+				placeholder="e.g. Web Developer"
+			/>
+			<TextArea
+				bind:value={jobDescription}
+				name="jobDescription"
+				label="Job Description"
+				placeholder="Details of job"
+			/>
+			<Select
+				bind:value={workMode}
+				name="workMode"
+				label="Work Mode"
+				options={workModeOptions}
+				placeholder="e.g. Remote"
+			/>
 			{#if ['onsite', 'hybrid', 'flexible'].includes(workMode)}
 				<div
 					in:slide={{ delay: 250, duration: 300, axis: 'y' }}
 					out:slide={{ delay: 250, duration: 300, axis: 'y' }}
 				>
-					<TextInput bind:value={workLocation} name="workLocation" label="Location" />
+					<TextInput
+						bind:value={workLocation}
+						name="workLocation"
+						label="Location"
+						placeholder="e.g. London (W1D 2LG)"
+					/>
 				</div>
 			{/if}
 			<TextInput
 				bind:value={salaryOffer}
 				name="emailSubject"
 				label="Salary Offer"
-				placeholder="ex. 630 GBP weekly + bonuses "
+				placeholder="e.g. 630 GBP weekly + bonuses "
 			/>
 			<TextArea
 				bind:value={additionalInformation}
 				name="additionalInformation"
 				label="Additional Information"
+				placeholder="Any informations not included above "
 			/>
 		{/if}
 		{#if emailSubject !== 'choose'}
@@ -138,25 +165,25 @@
 					bind:value={userName}
 					name="userName"
 					label="Full name"
-					placeholder="ex. John Doe"
+					placeholder="e.g. John Doe"
 				/>
 				<TextInput
 					bind:value={emailAddress}
 					name="userName"
 					label="Email address"
-					placeholder="ex. john.doe@example.com"
+					placeholder="e.g. john.doe@example.com"
 				/>
 				<TextInput
 					bind:value={mobileNumber}
 					name="userName"
 					label="Mobile number"
-					placeholder="ex. 07305112233"
+					placeholder="e.g. 07305112233"
 				/>
 				<TextArea
 					bind:value={otherContact}
 					name="otherContact"
 					label="Other Contact Ways"
-					placeholder="ex. Discord: JohnDoe#1234"
+					placeholder="e.g. Discord: JohnDoe#1234"
 				/>
 				<div class="flex jc:end">
 					<Button />
