@@ -16,7 +16,7 @@
 		{ label: 'Business Partnership', value: 'partnership' },
 		{ label: 'Collaboration', value: 'collaboration' },
 		{ label: 'Investment Opportunity', value: 'investment' },
-		{ label: 'Other Inquiries', value: 'investment' }
+		{ label: 'Other Inquiries', value: 'other' }
 	];
 	let deadlineTypeOptions = [
 		{ label: 'Flexible', value: 'flexible' },
@@ -54,6 +54,8 @@
 	let organisationName = '';
 	let collaborationDetails = '';
 	let expectedOutcomes = '';
+	let investmentDetails = '';
+	let expectedReturns = '';
 
 	let userName = '';
 	let emailAddress = '';
@@ -237,6 +239,37 @@
 				name="expectedOutcomes"
 				label="Expected Outcomes"
 				placeholder="The goals of the Collaboration"
+			/>
+			<TextArea
+				bind:value={additionalInformation}
+				name="additionalInformation"
+				label="Additional Information"
+				placeholder="Any informations not included above "
+			/>
+		{:else if emailSubject === 'investment'}
+			<TextInput
+				bind:value={companyName}
+				name="companyName"
+				label="Company Name"
+				placeholder="e.g. SurrealDB Ltd"
+			/>
+			<TextInput
+				bind:value={website}
+				name="website"
+				label="Company Website"
+				placeholder="e.g. https://example.com"
+			/>
+			<TextArea
+				bind:value={investmentDetails}
+				name="investmentDetails"
+				label="Investment Details"
+				placeholder="Details of the Investment"
+			/>
+			<TextArea
+				bind:value={expectedReturns}
+				name="expectedReturns"
+				label="Expected Returns"
+				placeholder="Investment objectives"
 			/>
 			<TextArea
 				bind:value={additionalInformation}
