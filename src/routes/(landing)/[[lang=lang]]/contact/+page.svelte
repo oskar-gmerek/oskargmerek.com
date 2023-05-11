@@ -37,7 +37,7 @@
 		{ label: 'Remote', value: 'remote' },
 		{ label: 'On-site', value: 'onsite' },
 		{ label: 'Hybrid', value: 'hybrid' },
-		{ label: 'Hybrid (Flexible Office)', value: 'hybrid_flexible' }
+		{ label: 'Flexible', value: 'flexible' }
 	];
 	let workLocation = '';
 	let salaryOffer = '';
@@ -63,9 +63,24 @@
 				in:slide={{ delay: 250, duration: 300, axis: 'y' }}
 				out:slide={{ delay: 250, duration: 300, axis: 'y' }}
 			>
-				<TextInput bind:value={projectName} name="projectName" label="Project Name" />
-				<TextArea bind:value={projectDetails} name="projectDetails" label="Project Details" />
-				<TextInput bind:value={budget} name="budget" label="Budget" />
+				<TextInput
+					bind:value={projectName}
+					name="projectName"
+					label="Project Name"
+					placeholder="ex. Retro Barbers Website"
+				/>
+				<TextArea
+					bind:value={projectDetails}
+					name="projectDetails"
+					label="Project Details"
+					placeholder="Detailed description of project"
+				/>
+				<TextInput
+					bind:value={budget}
+					name="budget"
+					label="Budget"
+					placeholder="ex. 1200-1600 GBP"
+				/>
 				<Select
 					bind:value={deadlineType}
 					name="deadlineType"
@@ -84,6 +99,7 @@
 					bind:value={additionalRequirements}
 					name="additionalRequirements"
 					label="Additional Requirements"
+					placeholder="All requirements and informations not included above"
 				/>
 			</div>
 		{:else if emailSubject === 'job_offer'}
@@ -92,7 +108,7 @@
 			<TextInput bind:value={workPosition} name="workPosition" label="Position" />
 			<TextArea bind:value={jobDescription} name="jobDescription" label="Job Description" />
 			<Select bind:value={workMode} name="workMode" label="Work Mode" options={workModeOptions} />
-			{#if ['onsite', 'hybrid', 'hybrid_flexible'].includes(workMode)}
+			{#if ['onsite', 'hybrid', 'flexible'].includes(workMode)}
 				<div
 					in:slide={{ delay: 250, duration: 300, axis: 'y' }}
 					out:slide={{ delay: 250, duration: 300, axis: 'y' }}
@@ -109,7 +125,7 @@
 			<TextArea
 				bind:value={additionalInformation}
 				name="additionalInformation"
-				label="Additional"
+				label="Additional Information"
 			/>
 		{/if}
 		{#if emailSubject !== 'choose'}
@@ -118,10 +134,30 @@
 				out:slide={{ delay: 250, duration: 300, axis: 'y' }}
 			>
 				<h2>Contact Details <span class="fg:red">*</span></h2>
-				<TextInput bind:value={userName} name="userName" label="Full name" />
-				<TextInput bind:value={emailAddress} name="userName" label="Email address" />
-				<TextInput bind:value={mobileNumber} name="userName" label="Mobile number" />
-				<TextArea bind:value={otherContact} name="otherContact" label="Other Contact Ways" />
+				<TextInput
+					bind:value={userName}
+					name="userName"
+					label="Full name"
+					placeholder="ex. John Doe"
+				/>
+				<TextInput
+					bind:value={emailAddress}
+					name="userName"
+					label="Email address"
+					placeholder="ex. john.doe@example.com"
+				/>
+				<TextInput
+					bind:value={mobileNumber}
+					name="userName"
+					label="Mobile number"
+					placeholder="ex. 07305112233"
+				/>
+				<TextArea
+					bind:value={otherContact}
+					name="otherContact"
+					label="Other Contact Ways"
+					placeholder="ex. Discord: JohnDoe#1234"
+				/>
 				<div class="flex jc:end">
 					<Button />
 				</div>
