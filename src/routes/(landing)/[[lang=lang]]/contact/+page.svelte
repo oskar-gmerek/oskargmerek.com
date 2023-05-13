@@ -4,7 +4,10 @@
 	import Select from '$lib/components/select/Select.svelte';
 	import TextInput from '$lib/components/textInput/TextInput.svelte';
 	import TextArea from '$lib/components/textarea/TextArea.svelte';
-	import { slide } from 'svelte/transition';
+	import { fade, slide } from 'svelte/transition';
+	import type { ActionData, PageData } from './$types';
+
+	export let form: ActionData;
 
 	$: emailSubject = 'choose';
 	let emailMessage = '';
@@ -282,7 +285,7 @@
 				bind:value={emailMessage}
 				name="emailMessage"
 				label="Message"
-				placeholder="Any informations not included above "
+				placeholder="Content of the message"
 			/>
 			<TextArea
 				bind:value={additionalInformation}
@@ -294,8 +297,8 @@
 
 		{#if emailSubject !== 'choose'}
 			<div
-				in:slide={{ delay: 250, duration: 300, axis: 'y' }}
-				out:slide={{ delay: 250, duration: 300, axis: 'y' }}
+				in:slide={{ delay: 300, duration: 300, axis: 'y' }}
+				out:slide={{ delay: 300, duration: 300, axis: 'y' }}
 			>
 				<h2>Contact Details <span class="fg:red">*</span></h2>
 				<TextInput
@@ -303,11 +306,14 @@
 					name="fullName"
 					label="Full name"
 					placeholder="e.g. John Doe"
+					error={form?.error.field === 'fullName' ? form?.error.message : ''}
 				/>
+
 				<TextInput
 					bind:value={emailAddress}
 					name="emailAddress"
 					label="Email address"
+					type="email"
 					placeholder="e.g. john.doe@example.com"
 				/>
 				<TextInput
@@ -322,7 +328,14 @@
 					label="Other Contact Ways"
 					placeholder="e.g. Discord: JohnDoe#1234"
 				/>
-				<div class="flex jc:end">
+				<div class="flex jc:end ai:center">
+					<div
+						class="px:8 fg:red"
+						in:fade={{ delay: 300, duration: 300 }}
+						out:fade={{ delay: 300, duration: 300 }}
+					>
+						{form?.error.field === 'contact' ? form?.error.message : ''}
+					</div>
 					<Button />
 				</div>
 			</div>
