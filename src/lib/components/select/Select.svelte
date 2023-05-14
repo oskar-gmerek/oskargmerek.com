@@ -7,6 +7,7 @@
 	export let description = '';
 	export let containerStyle = '';
 	export let placeholder = '';
+	export let disabled = false;
 	type Options =
 		| {
 				label: string;
@@ -25,13 +26,13 @@
 	<label for={id}>{label}</label>
 {/if}
 {#if description}
-	<div class="fg:white/.6">Description of input</div>
+	<div class="fg:white/.6">{description}</div>
 {/if}
 <div class={` bg:rgb(8,19,33) flex align-items:center mt:10 mb:30 ` + ' ' + containerStyle}>
 	<select {id} class={className + ' ' + mcss} {name} bind:value on:change {placeholder}>
 		{#if options}
 			{#each options as option}
-				<option value={option.value}>{option.label}</option>
+				<option value={option.value} {disabled}>{option.label}</option>
 			{/each}
 		{:else}
 			<slot name="options" />
