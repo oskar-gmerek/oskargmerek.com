@@ -7,6 +7,7 @@
 	export let maxlength = 5000;
 	export let label = '';
 	export let description = '';
+	export let placeholder = '';
 	export { className as class };
 
 	const id = randomString(7);
@@ -39,6 +40,7 @@
 		bind:this={textarea}
 		bind:value
 		on:input={textareaResize}
+		{placeholder}
 	/>
 	{#if value.length > 0}
 		<div
