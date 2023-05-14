@@ -1,3 +1,15 @@
+# v0.5.0 (Sun May 14 2023)
+
+#### :sparkles: Supplementary
+
+- Contact page [#53](https://github.com/oskar-gmerek/oskargmerek.com/pull/53) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.4.1 (Thu May 11 2023)
 
 #### :wrench: Improvement
