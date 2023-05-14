@@ -1,3 +1,15 @@
+# v0.5.2 (Sun May 14 2023)
+
+#### :wrench: Improvement
+
+- Input improvements [#55](https://github.com/oskar-gmerek/oskargmerek.com/pull/55) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.5.1 (Sun May 14 2023)
 
 #### :wrench: Improvement
