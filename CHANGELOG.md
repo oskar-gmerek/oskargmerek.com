@@ -1,3 +1,15 @@
+# v0.5.1 (Sun May 14 2023)
+
+#### :wrench: Improvement
+
+- test:  `coverage-c8` integration [#54](https://github.com/oskar-gmerek/oskargmerek.com/pull/54) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.5.0 (Sun May 14 2023)
 
 #### :sparkles: Supplementary
