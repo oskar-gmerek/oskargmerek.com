@@ -23,12 +23,35 @@ async function sendEmail(
 
 	const recipients = [new Recipient(emailTo || recipientEmail, nameTo || 'Oskar Gmerek')];
 
+	let subject = '';
+
+	switch (emailSubject) {
+		case 'web_dev':
+			subject = '∞ Web development inquiry❗️ ∞';
+			break;
+		case 'job_offer':
+			subject = '∞ Job Offer❗️ ∞';
+			break;
+		case 'partnership':
+			subject = '∞ Business Partnership inquiry❗️ ∞';
+			break;
+		case 'collaboration':
+			subject = '∞ Collaboration inquiry❗️ ∞';
+			break;
+		case 'investment':
+			subject = '∞ Investment inquiry❗️ ∞';
+			break;
+		default:
+			subject = '∞ Someone wants to connect❗️ ∞';
+			break;
+	}
+
 	const emailParams = new EmailParams()
 		.setFrom(sentFrom)
 		.setTo(recipients)
 		.setReplyTo(sentFrom)
-		.setSubject(emailSubject)
-		.setHtml(`<h1>${emailSubject}</h1><div class="bg:red fg:white">${emailBody}</div>`)
+		.setSubject(subject)
+		.setHtml(`<div class="background:red color:white">${emailBody}</div>`)
 		.setText(emailBody);
 
 	try {
