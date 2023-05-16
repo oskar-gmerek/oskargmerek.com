@@ -1,4 +1,5 @@
 <script>
+	import Button from '$lib/components/button/Button.svelte';
 	import BannerMe from '$lib/modules/landing/BannerMe.svelte';
 	import { T, getTranslate } from '@tolgee/svelte';
 	const { t } = getTranslate();
@@ -21,13 +22,13 @@
 >
 	<div class="rel bg:rgb(23,33,45) p:20|20|20|20 p:40|0|0|40@sm p:60|0|0|60@lg overflow-x:clip">
 		<div class="flex gap:50 h:420">
-			<div class="m:0|0|0|0 pr:100@sm w:full">
-				<h1 class="f:bold f:30 f:40@sm f:60@md">
-					<T keyName="hello_world" defaultValue="Hello, world" />! <br /><span
-						class="f:40 f:50@sm f:70@md"><T keyName="i_am" defaultValue="I'm" /> Oskar,</span
+			<div class="m:0|0|0|0 pr:100@sm w:full overflow:clip">
+				<h1 class="f:bold f:30 f:60@md">
+					<T keyName="hello_world" defaultValue="Hello, world" />! <br /><span class="f:30 f:60@md"
+						><T keyName="i_am" defaultValue="I'm" /> Oskar,</span
 					>
 				</h1>
-				<p>
+				<p class="f:14 f:16@md">
 					<T
 						keyName="landing_hello_world_hero"
 						defaultValue="an aspiring web developer on a mission to conquer the digital landscape. Fueled by
@@ -37,6 +38,9 @@
 					connect – we might just collaborate on something extraordinary!"
 					/>
 				</p>
+				<div class="flex jc:center p:20">
+					<Button>Let's connect</Button>
+				</div>
 			</div>
 			<BannerMe class="banner hidden block@sm " />
 		</div>
