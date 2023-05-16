@@ -1,3 +1,15 @@
+# v0.6.0 (Tue May 16 2023)
+
+#### :sparkles: Supplementary
+
+- Input improvements [#57](https://github.com/oskar-gmerek/oskargmerek.com/pull/57) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.5.2 (Sun May 14 2023)
 
 #### :wrench: Improvement
