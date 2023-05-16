@@ -15,8 +15,7 @@
 		  }[]
 		| null;
 	export let options: Options = null;
-	let className =
-		'w:full h:full   p:16 pr:30 outline:4|solid|rgb(8,19,33) outline:4|solid|orange:focus ~outline|0.5s r:7  appearance:none z:10 ';
+	let className = `bg:#071421  w:full h:full p:16 pr:30 b:4|solid|#071421  b:4|solid|orange:focus outline:none ~border|0.5s r:10  appearance:none z:10`;
 	export let mcss = '';
 
 	const id = randomString(7) + name;
@@ -28,7 +27,7 @@
 {#if description}
 	<div class="fg:white/.6">{description}</div>
 {/if}
-<div class={` bg:rgb(8,19,33) flex align-items:center mt:10 mb:30 ` + ' ' + containerStyle}>
+<div class={`flex align-items:center mt:10 mb:30 ` + ' ' + containerStyle}>
 	<select {id} class={className + ' ' + mcss} {name} bind:value on:change {placeholder}>
 		{#if options}
 			{#each options as option}
@@ -38,7 +37,7 @@
 			<slot name="options" />
 		{/if}
 	</select>
-	<div class="arrowDown rel">
-		<div class="abs top:-7 left:-20 f:12">⋁</div>
+	<div class="arrowDown rel z:11">
+		<div class="abs top:-7 left:-22 f:12">⋁</div>
 	</div>
 </div>

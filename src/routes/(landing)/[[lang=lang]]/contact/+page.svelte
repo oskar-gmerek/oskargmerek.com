@@ -63,6 +63,9 @@
 	let fullName = '';
 	let emailAddress = '';
 	let mobileNumber = '';
+	let transDelay = 150;
+	let transDuration = 350;
+	let transAxis: 'x' | 'y' = 'y';
 </script>
 
 <div class="rel bg:#17212d p:20 p:40@sm p:60@lg">
@@ -77,10 +80,7 @@
 		/>
 
 		{#if emailSubject === 'web_dev'}
-			<div
-				in:slide={{ delay: 250, duration: 300, axis: 'y' }}
-				out:slide={{ delay: 250, duration: 300, axis: 'y' }}
-			>
+			<div transition:slide={{ delay: transDelay, duration: transDuration, axis: transAxis }}>
 				<TextInput
 					bind:value={projectName}
 					name="projectName"
@@ -101,10 +101,7 @@
 					options={deadlineTypeOptions}
 				/>
 				{#if emailSubject === 'web_dev' && deadlineType === 'fixed'}
-					<div
-						in:slide={{ delay: 250, duration: 300, axis: 'y' }}
-						out:slide={{ delay: 250, duration: 300, axis: 'y' }}
-					>
+					<div transition:slide={{ delay: transDelay, duration: transDuration, axis: transAxis }}>
 						<TextInput bind:value={deadline} name="deadline" label="Deadline Date" />
 					</div>
 				{/if}
@@ -116,189 +113,196 @@
 				/>
 			</div>
 		{:else if emailSubject === 'job_offer'}
-			<TextInput
-				bind:value={companyName}
-				name="companyName"
-				label="Company Name"
-				placeholder="e.g. SurrealDB Ltd"
-			/>
-			<TextInput
-				bind:value={website}
-				name="website"
-				label="Company Website"
-				placeholder="e.g. https://example.com"
-			/>
-			<TextInput
-				bind:value={workPosition}
-				name="workPosition"
-				label="Position"
-				placeholder="e.g. Web Developer"
-			/>
-			<TextArea
-				bind:value={jobDescription}
-				name="jobDescription"
-				label="Job Description"
-				placeholder="Details of job"
-			/>
-			<Select
-				bind:value={workMode}
-				name="workMode"
-				label="Work Mode"
-				options={workModeOptions}
-				placeholder="e.g. Remote"
-			/>
-			{#if ['onsite', 'hybrid', 'flexible'].includes(workMode)}
-				<div
-					in:slide={{ delay: 250, duration: 300, axis: 'y' }}
-					out:slide={{ delay: 250, duration: 300, axis: 'y' }}
-				>
-					<TextInput
-						bind:value={workLocation}
-						name="workLocation"
-						label="Location"
-						placeholder="e.g. London (W1D 2LG)"
-					/>
-				</div>
-			{/if}
-			<TextInput
-				bind:value={salaryOffer}
-				name="salaryOffer"
-				label="Salary Offer"
-				placeholder="e.g. 630 GBP weekly + bonuses "
-			/>
-			<TextArea
-				bind:value={additionalInformation}
-				name="additionalInformation"
-				label="Additional Information"
-				placeholder="Any informations not included above "
-			/>
-		{:else if emailSubject === 'partnership'}
-			<TextInput
-				bind:value={companyName}
-				name="companyName"
-				label="Company Name"
-				placeholder="e.g. SurrealDB Ltd"
-			/>
-			<TextInput
-				bind:value={website}
-				name="website"
-				label="Company Website"
-				placeholder="e.g. https://example.com"
-			/>
-			<TextArea
-				bind:value={naturePartnership}
-				name="naturePartnership"
-				label="Nature of Partnership"
-				placeholder="The nature of the Partnership"
-			/>
-			<TextArea
-				bind:value={expectedBenefits}
-				name="expectedBenefits"
-				label="Expected Benefits"
-				placeholder="The goals of Partnership"
-			/>
-			<TextArea
-				bind:value={additionalInformation}
-				name="additionalInformation"
-				label="Additional Information"
-				placeholder="Any informations not included above "
-			/>
-		{:else if emailSubject === 'collaboration'}
-			<Select
-				bind:value={organisationType}
-				name="organisationType"
-				label="Organization Type"
-				options={organisationTypeOptions}
-			/>
-			{#if organisationType === 'company'}
+			<div transition:slide={{ delay: transDelay, duration: transDuration, axis: transAxis }}>
 				<TextInput
 					bind:value={companyName}
 					name="companyName"
 					label="Company Name"
 					placeholder="e.g. SurrealDB Ltd"
 				/>
-			{:else if organisationType === 'charity'}
 				<TextInput
-					bind:value={organisationName}
-					name="organisationName"
-					label="Organisation Name"
-					placeholder="e.g. British Red Cross"
+					bind:value={website}
+					name="website"
+					label="Company Website"
+					placeholder="e.g. https://example.com"
 				/>
-			{/if}
-			<TextInput
-				bind:value={website}
-				name="website"
-				label="Website"
-				placeholder="e.g. https://example.com"
-			/>
-			<TextArea
-				bind:value={collaborationDetails}
-				name="collaborationDetails"
-				label="Collaboration Details"
-				placeholder="The detail of the Collaboration"
-			/>
-			<TextArea
-				bind:value={expectedOutcomes}
-				name="expectedOutcomes"
-				label="Expected Outcomes"
-				placeholder="The goals of the Collaboration"
-			/>
-			<TextArea
-				bind:value={additionalInformation}
-				name="additionalInformation"
-				label="Additional Information"
-				placeholder="Any informations not included above "
-			/>
+				<TextInput
+					bind:value={workPosition}
+					name="workPosition"
+					label="Position"
+					placeholder="e.g. Web Developer"
+				/>
+				<TextArea
+					bind:value={jobDescription}
+					name="jobDescription"
+					label="Job Description"
+					placeholder="Details of job"
+				/>
+				<Select
+					bind:value={workMode}
+					name="workMode"
+					label="Work Mode"
+					options={workModeOptions}
+					placeholder="e.g. Remote"
+				/>
+				{#if ['onsite', 'hybrid', 'flexible'].includes(workMode)}
+					<div transition:slide={{ delay: transDelay, duration: transDuration, axis: transAxis }}>
+						<TextInput
+							bind:value={workLocation}
+							name="workLocation"
+							label="Location"
+							placeholder="e.g. London (W1D 2LG)"
+						/>
+					</div>
+				{/if}
+				<TextInput
+					bind:value={salaryOffer}
+					name="salaryOffer"
+					label="Salary Offer"
+					placeholder="e.g. 630 GBP weekly + bonuses "
+				/>
+				<TextArea
+					bind:value={additionalInformation}
+					name="additionalInformation"
+					label="Additional Information"
+					placeholder="Any informations not included above "
+				/>
+			</div>
+		{:else if emailSubject === 'partnership'}
+			<div transition:slide={{ delay: transDelay, duration: transDuration, axis: transAxis }}>
+				<TextInput
+					bind:value={companyName}
+					name="companyName"
+					label="Company Name"
+					placeholder="e.g. SurrealDB Ltd"
+				/>
+				<TextInput
+					bind:value={website}
+					name="website"
+					label="Company Website"
+					placeholder="e.g. https://example.com"
+				/>
+				<TextArea
+					bind:value={naturePartnership}
+					name="naturePartnership"
+					label="Nature of Partnership"
+					placeholder="The nature of the Partnership"
+				/>
+				<TextArea
+					bind:value={expectedBenefits}
+					name="expectedBenefits"
+					label="Expected Benefits"
+					placeholder="The goals of Partnership"
+				/>
+				<TextArea
+					bind:value={additionalInformation}
+					name="additionalInformation"
+					label="Additional Information"
+					placeholder="Any informations not included above "
+				/>
+			</div>
+		{:else if emailSubject === 'collaboration'}
+			<div transition:slide={{ delay: transDelay, duration: transDuration, axis: transAxis }}>
+				<Select
+					bind:value={organisationType}
+					name="organisationType"
+					label="Organization Type"
+					options={organisationTypeOptions}
+				/>
+				{#if organisationType === 'company'}
+					<TextInput
+						bind:value={companyName}
+						name="companyName"
+						label="Company Name"
+						placeholder="e.g. SurrealDB Ltd"
+					/>
+				{:else if organisationType === 'charity'}
+					<TextInput
+						bind:value={organisationName}
+						name="organisationName"
+						label="Organisation Name"
+						placeholder="e.g. British Red Cross"
+					/>
+				{/if}
+				<TextInput
+					bind:value={website}
+					name="website"
+					label="Website"
+					placeholder="e.g. https://example.com"
+				/>
+				<TextArea
+					bind:value={collaborationDetails}
+					name="collaborationDetails"
+					label="Collaboration Details"
+					placeholder="The detail of the Collaboration"
+				/>
+				<TextArea
+					bind:value={expectedOutcomes}
+					name="expectedOutcomes"
+					label="Expected Outcomes"
+					placeholder="The goals of the Collaboration"
+				/>
+				<TextArea
+					bind:value={additionalInformation}
+					name="additionalInformation"
+					label="Additional Information"
+					placeholder="Any informations not included above "
+				/>
+			</div>
 		{:else if emailSubject === 'investment'}
-			<TextInput
-				bind:value={companyName}
-				name="companyName"
-				label="Company Name"
-				placeholder="e.g. SurrealDB Ltd"
-			/>
-			<TextInput
-				bind:value={website}
-				name="website"
-				label="Company Website"
-				placeholder="e.g. https://example.com"
-			/>
-			<TextArea
-				bind:value={investmentDetails}
-				name="investmentDetails"
-				label="Investment Details"
-				placeholder="Details of the Investment"
-			/>
-			<TextArea
-				bind:value={expectedReturns}
-				name="expectedReturns"
-				label="Expected Returns"
-				placeholder="Investment objectives"
-			/>
-			<TextArea
-				bind:value={additionalInformation}
-				name="additionalInformation"
-				label="Additional Information"
-				placeholder="Any informations not included above "
-			/>
+			<div transition:slide={{ delay: transDelay, duration: transDuration, axis: transAxis }}>
+				<TextInput
+					bind:value={companyName}
+					name="companyName"
+					label="Company Name"
+					placeholder="e.g. SurrealDB Ltd"
+				/>
+				<TextInput
+					bind:value={website}
+					name="website"
+					label="Company Website"
+					placeholder="e.g. https://example.com"
+				/>
+				<TextArea
+					bind:value={investmentDetails}
+					name="investmentDetails"
+					label="Investment Details"
+					placeholder="Details of the Investment"
+				/>
+				<TextArea
+					bind:value={expectedReturns}
+					name="expectedReturns"
+					label="Expected Returns"
+					placeholder="Investment objectives"
+				/>
+				<TextArea
+					bind:value={additionalInformation}
+					name="additionalInformation"
+					label="Additional Information"
+					placeholder="Any informations not included above "
+				/>
+			</div>
 		{:else if emailSubject === 'other'}
-			<TextArea
-				bind:value={emailMessage}
-				name="emailMessage"
-				label="Message"
-				placeholder="Content of the message"
-			/>
-			<TextArea
-				bind:value={additionalInformation}
-				name="additionalInformation"
-				label="Additional Information"
-				placeholder="Any informations not included above "
-			/>
+			<div transition:slide={{ delay: transDelay, duration: transDuration, axis: transAxis }}>
+				<TextArea
+					bind:value={emailMessage}
+					name="emailMessage"
+					label="Message"
+					placeholder="Content of the message"
+				/>
+				<TextArea
+					bind:value={additionalInformation}
+					name="additionalInformation"
+					label="Additional Information"
+					placeholder="Any informations not included above "
+				/>
+			</div>
 		{/if}
 
 		{#if emailSubject !== 'choose'}
 			<div
-				in:slide={{ delay: 300, duration: 300, axis: 'y' }}
-				out:slide={{ delay: 300, duration: 300, axis: 'y' }}
+				class="mt:50"
+				transition:slide={{ delay: transDelay, duration: transDuration, axis: transAxis }}
 			>
 				<h2>Contact Details <span class="fg:red">*</span></h2>
 				<TextInput
@@ -331,8 +335,8 @@
 				<div class="flex jc:end ai:center">
 					<div
 						class="px:8 fg:red"
-						in:fade={{ delay: 300, duration: 300 }}
-						out:fade={{ delay: 300, duration: 300 }}
+						in:fade={{ delay: transDuration, duration: transDuration }}
+						out:fade={{ delay: transDuration, duration: transDuration }}
 					>
 						{form?.error.field === 'contact' ? form?.error.message : ''}
 					</div>
