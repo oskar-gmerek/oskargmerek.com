@@ -1,3 +1,15 @@
+# v0.6.1 (Tue May 16 2023)
+
+#### :wrench: Improvement
+
+- Contact form animations [#58](https://github.com/oskar-gmerek/oskargmerek.com/pull/58) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.6.0 (Tue May 16 2023)
 
 #### :sparkles: Supplementary
