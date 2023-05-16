@@ -1,3 +1,15 @@
+# v0.6.2 (Tue May 16 2023)
+
+#### :wrench: Improvement
+
+- fix: check if `languages` include `lang` before replace in html [#59](https://github.com/oskar-gmerek/oskargmerek.com/pull/59) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.6.1 (Tue May 16 2023)
 
 #### :wrench: Improvement
