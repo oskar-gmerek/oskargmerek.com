@@ -11,7 +11,7 @@
 	export { className as class };
 
 	const id = randomString(7);
-	let className = `bg:rgb(8,19,33)  w:full h:62 p:16 b:4|solid|rgb(8,19,33)  b:4|solid|orange:focus outline:none ~border|0.5s r:7 resize:none`;
+	let className = `bg:rgb(8,19,33)  w:full h:62 p:16 b:4|solid|rgb(8,19,33)  b:4|solid|orange:focus outline:none ~border|0.5s r:10 resize:none`;
 	let textarea: HTMLTextAreaElement;
 
 	const textareaResize = () => {

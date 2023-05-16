@@ -9,7 +9,7 @@
 	export let placeholder = '';
 	export let error = '';
 	export let type = 'text';
-	let className = `bg:rgb(8,19,33)  w:full h:full p:16 b:4|solid|rgb(8,19,33)  b:4|solid|orange:focus outline:none ~border|0.5s r:7`;
+	let className = `bg:rgb(8,19,33)  w:full h:full p:16 b:4|solid|rgb(8,19,33)  b:4|solid|orange:focus outline:none ~border|0.5s r:10 `;
 
 	const id = randomString(7);
 </script>

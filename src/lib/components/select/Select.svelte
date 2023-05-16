@@ -15,7 +15,7 @@
 		  }[]
 		| null;
 	export let options: Options = null;
-	let className = `bg:rgb(8,19,33)  w:full h:full p:16 pr:30 b:4|solid|rgb(8,19,33)  b:4|solid|orange:focus outline:none ~border|0.5s r:7  appearance:none z:10`;
+	let className = `bg:#071421  w:full h:full p:16 pr:30 b:4|solid|#071421  b:4|solid|orange:focus outline:none ~border|0.5s r:10  appearance:none z:10`;
 	export let mcss = '';
 
 	const id = randomString(7) + name;
@@ -38,6 +38,6 @@
 		{/if}
 	</select>
 	<div class="arrowDown rel z:11">
-		<div class="abs top:-7 left:-20 f:12">⋁</div>
+		<div class="abs top:-7 left:-22 f:12">⋁</div>
 	</div>
 </div>
