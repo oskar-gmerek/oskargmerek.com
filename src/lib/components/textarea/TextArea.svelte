@@ -11,15 +11,13 @@
 	export { className as class };
 
 	const id = randomString(7);
-	let className =
-		'w:full h:54px  p:16 outline:4|solid|rgb(8,19,33) outline:4|solid|orange:focus ~outline|0.5s r:7 resize:none  ';
-
+	let className = `bg:rgb(8,19,33)  w:full h:62 p:16 b:4|solid|rgb(8,19,33)  b:4|solid|orange:focus outline:none ~border|0.5s r:7 resize:none`;
 	let textarea: HTMLTextAreaElement;
 
 	const textareaResize = () => {
 		if (textarea) {
-			textarea.style.height = '54px';
-			textarea.style.height = `${textarea.scrollHeight}px`;
+			textarea.style.height = '62px';
+			textarea.style.height = `${textarea.scrollHeight + 8}px`;
 		}
 	};
 </script>
@@ -31,7 +29,7 @@
 	<div class="fg:white/.6">{description}</div>
 {/if}
 
-<div class="bg:rgb(8,19,33) mt:10 mb:50 r:7">
+<div class="mt:10 mb:50 r:7">
 	<textarea
 		{id}
 		{name}
