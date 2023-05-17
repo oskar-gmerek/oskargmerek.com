@@ -1,7 +1,7 @@
 <script>
 	import Button from '$lib/components/button/Button.svelte';
 	import BannerMe from '$lib/modules/landing/BannerMe.svelte';
-	import { T, getTranslate } from '@tolgee/svelte';
+	import { getTranslate } from '@tolgee/svelte';
 	const { t } = getTranslate();
 </script>
 
@@ -24,22 +24,22 @@
 		<div class="flex gap:50 h:420">
 			<div class="m:0|0|0|0 pr:100@sm w:full overflow:clip">
 				<h1 class="f:bold f:30 f:60@md">
-					<T keyName="hello_world" defaultValue="Hello, world" />! <br /><span class="f:30 f:60@md"
-						><T keyName="i_am" defaultValue="I'm" /> Oskar,</span
+					{$t('hello_world', 'Hello, world')}! <br /><span class="f:30 f:60@md"
+						>{$t('i_am', `I'm`)} Oskar,</span
 					>
 				</h1>
 				<p class="f:14 f:16@md">
-					<T
-						keyName="landing_hello_world_hero"
-						defaultValue="an aspiring web developer on a mission to conquer the digital landscape. Fueled by
+					{$t(
+						'landing_hello_world_hero',
+						`an aspiring web developer on a mission to conquer the digital landscape. Fueled by
 					curiosity and a hunger for growth, I am constantly exploring new technologies and
 					techniques to sharpen my skills. While my portfolio may be modest for now, my
 					determination and passion speak volumes. Stick around, witness my journey, and let's
-					connect – we might just collaborate on something extraordinary!"
-					/>
+					connect – we might just collaborate on something extraordinary!`
+					)}
 				</p>
 				<div class="flex jc:center p:20">
-					<Button>Let's connect</Button>
+					<Button>{$t('connect', `Let's connect`)}</Button>
 				</div>
 			</div>
 			<BannerMe class="banner hidden block@sm " />
