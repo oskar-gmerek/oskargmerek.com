@@ -2,9 +2,6 @@ import type { Actions } from './$types';
 import type { ContactForm } from '$lib/types/contact';
 import { fail } from '@sveltejs/kit';
 import sendEmail from '$lib/server/sendEmail';
-import { getTranslate } from '@tolgee/svelte';
-
-const { t } = getTranslate();
 
 export const actions = {
 	default: async (event) => {
