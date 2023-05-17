@@ -1,3 +1,15 @@
+# v0.6.3 (Wed May 17 2023)
+
+#### :wrench: Improvement
+
+- Translations of `homepage`, `contact page` and `TopNav` [#67](https://github.com/oskar-gmerek/oskargmerek.com/pull/67) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.6.2 (Tue May 16 2023)
 
 #### :wrench: Improvement
