@@ -4,43 +4,46 @@
 	import codeimg from '$lib/images/welcome-html-black.png?w=340&h=195&format=webp&imagetools';
 	import codeimg_retina from '$lib/images/welcome-html-black.png?w=680&h=390&format=webp&imagetools';
 	import videobackground from '$lib/images/web_development_video_background.mp4';
+	import { getTranslate } from '@tolgee/svelte';
 
 	let className = '';
 	export { className as class };
+
+	const { t } = getTranslate();
 </script>
 
 <div class={`obj:cover overflow:hidden` + className}>
 	<img
 		srcset={`${codeimg}, ${codeimg_retina} 2x`}
 		src={codeimg}
-		alt="web development javascript code snippet illustration"
+		alt={$t('codeimg1')}
 		class="codeimg3 block rel h:195 w:340 z:20 left:-150 top:280 transform:rotate(5deg) transform:bottom|right ~all|300ms|ease-in ~delay:300ms box-shadow:3|3|10|black/.75 r:15
 			"
 	/>
 	<img
 		srcset={`${codeimg}, ${codeimg_retina} 2x`}
 		src={codeimg}
-		alt="web development typescript code snippet illustration"
+		alt={$t('codeimg2')}
 		class="h:195 w:340 codeimg2 block rel z:20 left:-150 top:85 transform:rotate(5deg) transform:bottom|right transform:bottom|right ~all|300ms|ease-in ~delay:200ms box-shadow:3|3|10|black/.75 r:15
 			"
 	/>
 	<img
 		srcset={`${codeimg}, ${codeimg_retina} 2x`}
 		src={codeimg}
-		alt="web development svelte code snippet illustration"
+		alt={$t('codeimg3')}
 		class="h:195 w:340 codeimg1 block rel z:90 left:-150 top:-110 transform:rotate(5deg) transform:bottom|right transform:bottom|right ~all|300ms|ease-in ~delay:100ms box-shadow:3|3|10|black/.75 r:15
 			"
 	/>
 	<img
 		srcset={`${oskar_img}, ${oskar_img_x2} 2x`}
 		src={oskar_img}
-		alt=""
+		alt={$t('oskar_img')}
 		class="rel left:60 top:-585 brightness(0) h:420 w:295 z:80"
 	/>
 	<img
 		srcset={`${oskar_img}, ${oskar_img_x2} 2x`}
 		src={oskar_img}
-		alt="web developer"
+		alt={$t('oskar_img2')}
 		class="rel left:50 top:-1005 h:420 w:295 z:80
 			"
 	/>
@@ -51,7 +54,7 @@
 		disablepictureinpicture
 		disableremoteplayback
 		class={`rel blend:screen h:420 w:full top:-1439 left:85 `}
-		title="web development code rain background"
+		title={$t('hero_videobg')}
 	>
 		<source src={videobackground} />
 		<track kind="captions" />
