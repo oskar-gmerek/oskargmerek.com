@@ -1,3 +1,15 @@
+# v0.6.4 (Wed May 17 2023)
+
+#### :wrench: Improvement
+
+- Translation files [#68](https://github.com/oskar-gmerek/oskargmerek.com/pull/68) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.6.3 (Wed May 17 2023)
 
 #### :wrench: Improvement
