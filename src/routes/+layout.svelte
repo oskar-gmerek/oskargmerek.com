@@ -5,10 +5,10 @@
 		TolgeeProvider,
 		Tolgee,
 		DevTools,
-		FormatSimple,
 		LanguageStorage,
 		LanguageDetector
 	} from '@tolgee/svelte';
+	import { FormatIcu } from '@tolgee/format-icu';
 	import { languages, defaultLang } from '$lib/i18n/locales';
 	import type { LayoutData } from './$types';
 	import { inject } from '@vercel/analytics';
@@ -20,7 +20,7 @@
 	const loadConfig = import('../master.css');
 	const tolgee = Tolgee()
 		.use(DevTools())
-		.use(FormatSimple())
+		.use(FormatIcu())
 		.use(LanguageStorage())
 		.use(LanguageDetector())
 		.init({
