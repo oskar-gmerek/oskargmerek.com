@@ -2,6 +2,9 @@ import type { Actions } from './$types';
 import type { ContactForm } from '$lib/types/contact';
 import { fail } from '@sveltejs/kit';
 import sendEmail from '$lib/server/sendEmail';
+import { getTranslate } from '@tolgee/svelte';
+
+const { t } = getTranslate();
 
 export const actions = {
 	default: async (event) => {
@@ -9,8 +12,7 @@ export const actions = {
 		if (!data.fullName) {
 			return fail(400, {
 				error: {
-					field: 'fullName',
-					message: 'Please provide your name'
+					field: 'fullName'
 				}
 			});
 		}
@@ -18,8 +20,7 @@ export const actions = {
 		if (!data.emailAddress && !data.mobileNumber && !data.otherContact) {
 			return fail(400, {
 				error: {
-					field: 'contact',
-					message: 'Please provide at least one form of contact'
+					field: 'contact'
 				}
 			});
 		}
