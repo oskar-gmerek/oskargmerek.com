@@ -1,7 +1,7 @@
 <script lang="ts">
 	import randomString from '$lib/utils/randomString';
 	import { fade } from 'svelte/transition';
-
+	import { getTranslate } from '@tolgee/svelte';
 	export let value = '';
 	export let name = '';
 	export let maxlength = 5000;
@@ -20,6 +20,8 @@
 			textarea.style.height = `${textarea.scrollHeight + 8}px`;
 		}
 	};
+
+	const { t } = getTranslate();
 </script>
 
 {#if label}
@@ -48,7 +50,7 @@
 				duration: 300
 			}}
 		>
-			{value.length} characters
+			{$t('x_characters', `${value.length} characters`, { length: `${value.length}` })}
 		</div>
 	{:else}
 		<div
@@ -58,7 +60,7 @@
 				duration: 300
 			}}
 		>
-			Max {maxlength} characters
+			{$t('max_characters', `Max ${maxlength} characters`, { maxlength: `${maxlength}` })}
 		</div>
 	{/if}
 </div>
