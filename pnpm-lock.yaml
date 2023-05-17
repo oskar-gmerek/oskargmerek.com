@@ -36,6 +36,9 @@ devDependencies:
   '@sveltejs/kit':
     specifier: ^1.15.9
     version: 1.15.9(svelte@3.58.0)(vite@4.3.3)
+  '@tolgee/format-icu':
+    specifier: ^5.8.2
+    version: 5.8.2
   '@tolgee/svelte':
     specifier: ^5.8.3
     version: 5.8.3(svelte@3.58.0)
@@ -1000,6 +1003,10 @@ packages:
 
   /@tolgee/core@5.8.2:
     resolution: {integrity: sha512-esUjIBWI2gN+iKVE4TkUNV5yW3+RhpHn71LVcSU689ZglLIuagyiWUkEiVleZdYo3r/VQYU1aDYG5ZHfdzYgzQ==}
+    dev: true
+
+  /@tolgee/format-icu@5.8.2:
+    resolution: {integrity: sha512-fh0rkz12LkwVMfWC+vk1e6IWW/1V4ecckkA5aXaXr8LTCcIaq4Z3vWrdDH8xez9yt2WR6Ke2p8m5w1xuz8wi+g==}
     dev: true
 
   /@tolgee/svelte@5.8.3(svelte@3.58.0):

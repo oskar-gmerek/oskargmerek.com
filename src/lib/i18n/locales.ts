@@ -3,4 +3,6 @@ export const languages = {
 	pl: 'PL'
 };
 
+export const languagesArray = Object.entries(languages).map(([label]) => label);
+
 export const defaultLang = 'en';

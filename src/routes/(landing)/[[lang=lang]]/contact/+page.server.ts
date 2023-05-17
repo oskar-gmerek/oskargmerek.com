@@ -9,8 +9,7 @@ export const actions = {
 		if (!data.fullName) {
 			return fail(400, {
 				error: {
-					field: 'fullName',
-					message: 'Please provide your name'
+					field: 'fullName'
 				}
 			});
 		}
@@ -18,8 +17,7 @@ export const actions = {
 		if (!data.emailAddress && !data.mobileNumber && !data.otherContact) {
 			return fail(400, {
 				error: {
-					field: 'contact',
-					message: 'Please provide at least one form of contact'
+					field: 'contact'
 				}
 			});
 		}
