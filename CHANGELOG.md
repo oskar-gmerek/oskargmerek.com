@@ -1,3 +1,15 @@
+# v0.7.0 (Thu May 18 2023)
+
+#### :sparkles: Supplementary
+
+- Translations [#69](https://github.com/oskar-gmerek/oskargmerek.com/pull/69) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.6.4 (Wed May 17 2023)
 
 #### :wrench: Improvement
