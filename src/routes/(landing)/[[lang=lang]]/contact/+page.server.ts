@@ -254,5 +254,8 @@ export const actions = {
 			`;
 		}
 		await sendEmail(data.emailSubject, emailBody);
+		return {
+			sent: true
+		};
 	}
 } satisfies Actions;
