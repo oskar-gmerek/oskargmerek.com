@@ -14,7 +14,7 @@
 		},
 		{
 			label: $t('nav_contact', 'Contact'),
-			href: `/${data?.lang === 'en' ? '' : data?.lang}`,
+			href: `/${data?.lang === 'en' ? 'contact' : data?.lang + '/contact'}`,
 			title: $t('nav_contact_title', 'Contact Oskar Gmerek')
 		}
 	];
