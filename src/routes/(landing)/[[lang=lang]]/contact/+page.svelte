@@ -384,7 +384,7 @@
 							? $t('contact_required', 'Please provide at least one form of contact')
 							: ''}
 					</div>
-					<Button />
+					<Button>{$t('submit_button')}</Button>
 				</div>
 			</div>
 		{/if}
