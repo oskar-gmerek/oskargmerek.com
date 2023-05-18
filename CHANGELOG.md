@@ -1,3 +1,15 @@
+# v0.7.1 (Thu May 18 2023)
+
+#### :wrench: Improvement
+
+- Small changes [#70](https://github.com/oskar-gmerek/oskargmerek.com/pull/70) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.7.0 (Thu May 18 2023)
 
 #### :sparkles: Supplementary
