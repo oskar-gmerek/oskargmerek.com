@@ -14,6 +14,7 @@
 	import { inject } from '@vercel/analytics';
 	import * as englishLang from '$lib/i18n/en.json';
 	import * as polishLang from '$lib/i18n/pl.json';
+	import { dev } from '$app/environment';
 
 	export let data: LayoutData;
 
@@ -37,7 +38,7 @@
 		});
 
 	// Vercel Analytics injection
-	inject();
+	inject({ mode: dev ? 'development' : 'production' });
 </script>
 
 <LazyCSSProvider config={loadConfig}>
