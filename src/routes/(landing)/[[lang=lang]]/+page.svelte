@@ -1,7 +1,9 @@
-<script>
+<script lang="ts">
 	import Button from '$lib/components/button/Button.svelte';
 	import BannerMe from '$lib/modules/landing/BannerMe.svelte';
 	import { getTranslate } from '@tolgee/svelte';
+	import type { PageData } from './$types';
+	export let data: PageData;
 	const { t } = getTranslate();
 </script>
 
@@ -39,7 +41,9 @@
 					)}
 				</p>
 				<div class="flex jc:center p:20">
-					<Button>{$t('connect', `Let's connect`)}</Button>
+					<Button href={data.lang === 'en' ? 'contact' : data.lang + '/contact'}
+						>{$t('connect', `Let's connect`)}</Button
+					>
 				</div>
 			</div>
 			<BannerMe class="banner hidden block@sm " />
