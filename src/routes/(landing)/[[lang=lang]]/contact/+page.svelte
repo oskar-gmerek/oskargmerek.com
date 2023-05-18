@@ -119,7 +119,12 @@
 				/>
 				{#if emailSubject === 'web_dev' && deadlineType === 'fixed'}
 					<div transition:slide={{ delay: transDelay, duration: transDuration, axis: transAxis }}>
-						<TextInput bind:value={deadline} name="deadline" label={$t('deadline')} />
+						<TextInput
+							bind:value={deadline}
+							name="deadline"
+							label={$t('deadline')}
+							placeholder={'31/12/2025'}
+						/>
 					</div>
 				{/if}
 				<TextArea
