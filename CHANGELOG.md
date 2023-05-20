@@ -1,3 +1,20 @@
+# v0.8.0 (Sat May 20 2023)
+
+#### :sparkles: Supplementary
+
+- Tolgee automation [#75](https://github.com/oskar-gmerek/oskargmerek.com/pull/75) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+- feat: add `github` and `linkedin` links [#73](https://github.com/oskar-gmerek/oskargmerek.com/pull/73) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### :wrench: Improvement
+
+- Revert "Tolgee automation" [#76](https://github.com/oskar-gmerek/oskargmerek.com/pull/76) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.7.1 (Thu May 18 2023)
 
 #### :wrench: Improvement
