@@ -12,8 +12,8 @@
 	import { languages, defaultLang } from '$lib/i18n/locales';
 	import type { LayoutData } from './$types';
 	import { inject } from '@vercel/analytics';
-	import * as englishLang from '$lib/i18n/json/en.json';
-	import * as polishLang from '$lib/i18n/json/pl.json';
+	import * as englishLang from '$lib/i18n/en.json';
+	import * as polishLang from '$lib/i18n/pl.json';
 	import { dev } from '$app/environment';
 
 	export let data: LayoutData;

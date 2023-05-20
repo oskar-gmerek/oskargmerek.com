@@ -11,8 +11,7 @@
 		"test:unit": "vitest",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
-		"coverage": "vitest run --coverage",
-		"tolgee:pull": "tolgee pull ./src/lib/i18n/json -o"
+		"coverage": "vitest run --coverage"
 	},
 	"devDependencies": {
 		"@auto-it/all-contributors": "^10.46.0",
@@ -25,7 +24,6 @@
 		"@playwright/test": "^1.33.0",
 		"@sveltejs/adapter-vercel": "^2.4.3",
 		"@sveltejs/kit": "^1.15.9",
-		"@tolgee/cli": "^1.1.0",
 		"@tolgee/format-icu": "^5.8.2",
 		"@tolgee/svelte": "^5.8.3",
 		"@typescript-eslint/eslint-plugin": "^5.59.1",
