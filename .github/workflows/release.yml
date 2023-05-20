@@ -41,6 +41,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
+      - name: Pull Translations
+        run: pnpm tolgee:pull --api-key ${{ secrets.TOLGEE_API_KEY }}
+
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
