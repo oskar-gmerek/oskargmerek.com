@@ -44,7 +44,7 @@ jobs:
       - name: Pull Translations
         run: |
           pnpm add -D @tolgee/cli 
-          tolgee pull ./src/lib/i18n/json -o --api-key ${{ secrets.TOLGEE_API_KEY }}
+          pnpm tolgee pull ./src/lib/i18n/json -o --api-key ${{ secrets.TOLGEE_API_KEY }}
 
       - name: Create Release
         env:
