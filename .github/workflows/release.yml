@@ -42,7 +42,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Pull Translations
-        run: pnpm tolgee:pull --api-key ${{ secrets.TOLGEE_API_KEY }}
+        run: npx tolgee pull ./src/lib/i18n/json -o --api-key ${{ secrets.TOLGEE_API_KEY }}
 
       - name: Create Release
         env:
