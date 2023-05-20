@@ -1,3 +1,21 @@
+# v0.8.1 (Sat May 20 2023)
+
+#### :wrench: Improvement
+
+- fix: missing `pnpm` [#83](https://github.com/oskar-gmerek/oskargmerek.com/pull/83) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+- fix: typo [#82](https://github.com/oskar-gmerek/oskargmerek.com/pull/82) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+- fix: add `@tolgee/cli` [#81](https://github.com/oskar-gmerek/oskargmerek.com/pull/81) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+- fix: use `npx` instead of `package.json` script [#80](https://github.com/oskar-gmerek/oskargmerek.com/pull/80) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+- ops: action job re-order [#79](https://github.com/oskar-gmerek/oskargmerek.com/pull/79) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+- Revert "Revert "Tolgee automation"" [#78](https://github.com/oskar-gmerek/oskargmerek.com/pull/78) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+- fix: job re-ordering [#77](https://github.com/oskar-gmerek/oskargmerek.com/pull/77) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.8.0 (Sat May 20 2023)
 
 #### :sparkles: Supplementary
