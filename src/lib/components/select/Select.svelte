@@ -6,7 +6,6 @@
 	export let label = '';
 	export let description = '';
 	export let containerStyle = '';
-	export let placeholder = '';
 	export let disabled = false;
 	type Options =
 		| {
@@ -28,7 +27,7 @@
 	<div class="fg:white/.6">{description}</div>
 {/if}
 <div class={`flex align-items:center mt:10 mb:30 ` + ' ' + containerStyle}>
-	<select {id} class={className + ' ' + mcss} {name} bind:value on:change {placeholder}>
+	<select {id} class={className + ' ' + mcss} {name} bind:value on:change>
 		{#if options}
 			{#each options as option}
 				<option value={option.value} {disabled}>{option.label}</option>
