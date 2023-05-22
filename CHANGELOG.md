@@ -1,3 +1,16 @@
+# v0.8.3 (Mon May 22 2023)
+
+#### :wrench: Improvement
+
+- Merge pull request #86 from oskar-gmerek/ops-fix-`pull`-language-files [#87](https://github.com/oskar-gmerek/oskargmerek.com/pull/87) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+- Ops fix `pull` language files [#86](https://github.com/oskar-gmerek/oskargmerek.com/pull/86) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 1
+
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.8.2 (Mon May 22 2023)
 
 #### :wrench: Improvement
