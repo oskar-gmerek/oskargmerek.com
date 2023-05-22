@@ -47,8 +47,8 @@ jobs:
 
       - name: Commit Translation Files
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "${{ secrets.GH_USER_EMAIL }}"
+          git config --local user.name "Oskar | Workflow Action"
           if [[ -n $(git status --porcelain) ]]; then
             git add .
             git commit -m "i18n: update translation files"
