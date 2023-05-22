@@ -25,7 +25,7 @@ jobs:
         id: pnpm-install
         with:
           version: 8
-          run_install: true
+          run_install: false
 
       - name: Get pnpm store directory
         id: pnpm-cache
@@ -43,8 +43,18 @@ jobs:
 
       - name: Pull Translations
         run: |
-          pnpm add -D @tolgee/cli 
-          pnpm tolgee pull ./src/lib/i18n/json -o --api-key ${{ secrets.TOLGEE_API_KEY }}
+          pnpx @tolgee/cli pull ./src/lib/i18n/json -o --api-key ${{ secrets.TOLGEE_API_KEY }}
+
+      - name: Commit Translation Files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          if [[ -n $(git status --porcelain) ]]; then
+            git add .
+            git commit -m "i18n: update translation files"
+          else
+            echo "Translation files are up to date"
+          fi
 
       - name: Create Release
         env:
