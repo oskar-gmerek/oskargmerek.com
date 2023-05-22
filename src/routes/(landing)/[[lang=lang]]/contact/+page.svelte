@@ -175,7 +175,6 @@
 						name="workMode"
 						label={$t('workMode', 'Work Mode')}
 						options={workModeOptions}
-						placeholder={$t('placeholder_workMode', 'e.g. Remote')}
 					/>
 					{#if ['onsite', 'hybrid', 'flexible'].includes(workMode)}
 						<div transition:slide={{ delay: transDelay, duration: transDuration, axis: transAxis }}>

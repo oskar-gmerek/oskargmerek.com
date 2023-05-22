@@ -15,7 +15,7 @@
 <div class="fixed top:0 w:full z:100">
 	<nav class="flex m:auto max-w:lg bg:background ai:center py:10 bg:green jc:space-between">
 		<div class="flex ai:center">
-			<a href="/" title="web developer portfolio"
+			<a href="/" title={$t('monogram_title')} aria-label={$t('monogram_aria_label')}
 				><Logo class="h:70 p:10 fill:orange b:green|2|2" /></a
 			>
 			<div class="mr:5"><LangSelect /></div>
