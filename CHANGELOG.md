@@ -1,3 +1,18 @@
+# v0.8.2 (Mon May 22 2023)
+
+#### :wrench: Improvement
+
+- i18n: update translation files (action@github.com)
+- fix: use `pnpx` to run `tolgee/cli` & commit translations [#85](https://github.com/oskar-gmerek/oskargmerek.com/pull/85) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+- Homepage seo [#84](https://github.com/oskar-gmerek/oskargmerek.com/pull/84) ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+#### Authors: 2
+
+- GitHub Action (action@github.com)
+- Oskar ([@oskar-gmerek](https://github.com/oskar-gmerek))
+
+---
+
 # v0.8.1 (Sat May 20 2023)
 
 #### :wrench: Improvement
