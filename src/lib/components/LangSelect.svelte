@@ -30,6 +30,7 @@
 <Select
 	bind:value
 	on:change={() => handleLanguageChange()}
+	name="chooseLanguage"
 	mcss="py:4 "
 	containerStyle="mt:0! mb:0! min-w:max"
 >
