@@ -1,3 +1,15 @@
+# v0.8.6 (Tue Jul 25 2023)
+
+#### :wrench: Improvement
+
+- build(deps-dev): bump word-wrap from 1.2.3 to 1.2.4 [#89](https://github.com/oskar-gmerek/oskargmerek.com/pull/89) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v0.8.5 (Mon May 22 2023)
 
 #### :wrench: Improvement
