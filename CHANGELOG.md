@@ -1,3 +1,15 @@
+# v0.8.8 (Fri Nov 17 2023)
+
+#### :wrench: Improvement
+
+- build(deps-dev): bump sharp from 0.32.1 to 0.32.6 [#92](https://github.com/oskar-gmerek/oskargmerek.com/pull/92) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v0.8.7 (Fri Aug 11 2023)
 
 #### :wrench: Improvement
