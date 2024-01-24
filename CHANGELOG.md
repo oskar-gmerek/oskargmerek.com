@@ -1,3 +1,15 @@
+# v0.8.9 (Wed Jan 24 2024)
+
+#### :wrench: Improvement
+
+- build(deps-dev): bump vite from 4.3.9 to 4.5.2 [#93](https://github.com/oskar-gmerek/oskargmerek.com/pull/93) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v0.8.8 (Fri Nov 17 2023)
 
 #### :wrench: Improvement
