@@ -33,7 +33,7 @@
 		"@vercel/analytics": "^1.0.1",
 		"@vitest/coverage-c8": "^0.31.1",
 		"auto": "^10.46.0",
-		"eslint": "^8.41.0",
+		"eslint": "^9.26.0",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"mailersend": "^2.1.1",
