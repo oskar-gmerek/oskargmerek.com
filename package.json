@@ -24,7 +24,7 @@
 		"@master/css.svelte": "2.0.0-beta.142",
 		"@playwright/test": "^1.34.0",
 		"@sveltejs/adapter-vercel": "^3.0.0",
-		"@sveltejs/kit": "^1.18.0",
+		"@sveltejs/kit": "^2.57.1",
 		"@tolgee/cli": "^1.1.0",
 		"@tolgee/format-icu": "^5.8.2",
 		"@tolgee/svelte": "^5.8.4",
